@@ -1,0 +1,42 @@
+<html>
+    <head>
+            <title>
+                My Website
+            </title>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js'"></script>
+    </head>
+    
+    <body style="background-color: rgb(201, 187, 164)">
+        <!-- <h1>
+            My Website
+        </h1>
+        
+        <h2>
+            This is my first website.
+        </h2>
+
+        <p>
+            Hello World.
+        </p>
+        --> 
+        
+        <img id="Bell" src="Bell Icon.jpg" width="150" onmouseover="this.src ='Bell2.png';" onmouseout="this.src = 'Bell Icon.jpg';">
+        <img id="Wave" src="Wave Icon.jpg" width="150">
+        <img id="Leaf" src="Leaf Icon.jpg" width="200">
+        <img id="Can" src="Can Icon.jpg" width="150">
+        <img id="Wood" src="Wood Icon.jpg" width="150">
+
+        <script>
+            var sound1 = new buzz.sound("IMG/Sound/Ding.mp3");
+            var sound2 = new buzz.sound("sound/Water.mp3");
+            var sound3 = new buzz.sound("sound/Leaves Crushing.mp3");
+            var sound4 = new buzz.sound("sound/Cling.mp3");
+            var sound5 = new buzz.sound("sound/Banging.mp3");
+
+            window.onload = function() {
+                document.getElementById('Bell').addEventListener('mouseover', function () {sound1.play();});
+            }
+            
+        </script>
+    </body>
+</html>
